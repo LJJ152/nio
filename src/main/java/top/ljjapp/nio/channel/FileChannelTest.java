@@ -1,4 +1,4 @@
-package top.ljjapp.nio.Channel;
+package top.ljjapp.nio.channel;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

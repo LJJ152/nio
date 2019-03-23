@@ -1,4 +1,4 @@
-package top.ljjapp.nio.Channel;
+package top.ljjapp.nio.buffer;
 
 import java.nio.ByteBuffer;
 
