@@ -15,16 +15,17 @@ public class FileChannelTest {
 
         //2.创建一个读数据缓冲区对象
         ByteBuffer buf = ByteBuffer.allocate(48);
-
-        //3.从通道中读取数据
+        //从通道中读取数据
         int read = channel.read(buf);
-        //创建一个写数据缓冲区对象
+
+        //3.创建一个写数据缓冲区对象
         ByteBuffer buf2 = ByteBuffer.allocate(48);
         //写入数据
         buf2.put("filechannel test".getBytes());
         buf2.flip();
+        channel.write(buf2);
 
-        channel.write(buf);
+        //读取数据
         while (read != -1) {
             System.out.println("Read" + read);
             buf.flip();
